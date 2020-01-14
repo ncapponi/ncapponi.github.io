@@ -10,17 +10,61 @@
 
   <h1>Défis janvier 2020</h1>
 
-  <h2>Programme pour tester le moteur</h2>
-    Ecrire le programme suivant et le téléverser dans le robot
+  <h2>Programme pour tester le moteur du robot</h2>
+    Ecris le programme suivant et téléverse le dans le robot.
+    Essaie de comprendre ce que va faire le robot. Est-ce qu'il va s'arrêter à la fin du programme ?
     <br>
     <img src="programme_test_moteur.png" alt="test du moteur">
     
   <h2>Défi 1: s'arrêter devant un obstacle</h2>
-   Utiliser le capteur de distance (capteur ultrason) pour détecter quand un obstacle est à moins de 10 cm du robot.
+   Utilise le capteur de distance (capteur ultrason) pour détecter quand un obstacle est à moins de 10 cm du robot.
    <br> 
-   Le robot doit s'arrêter quand il détecte l'obstacle
+   Le robot doit avancer s'il n'y a pas d'obstacle et s'arrêter quand il détecte l'obstacle.
+   <br>
+   <img src="defi1.png" alt="défi 1">
+   <br>
+   Tu dois mettre les 3 bonnes valeurs qui manquent dans le programme.
    <br>
    <img src="programme_arret_obstacle.png" alt="arrêt devant un obstacle">
+
+  <h2>Défi 2: tourner devant un obstacle</h2>
+   Le robot doit avancer s'il n'y a pas d'obstacle et tourner à gauche si un obstacle se trouve à moins de 10 cm.
+   <br>
+   Le robot recommence à avancer après avoir tourné.
+   <br>
+   <img src="defi2.png" alt="défi 2"> 
+ 
+  <h2>Défi 3: faire demi-tour devant un obstacle</h2>
+   Le robot doit avancer s'il n'y a pas d'obstacle. Si un obstacle se trouve à moins de 10 cm, il doit reculer et faire demi-tour.-tour
+   <br>
+   Le robot recommence à avancer après avoir fait son demi-tour.
+   <br>
+   <img src="defi3.png" alt="défi 3">
+
+  <h2>Défi 4: rechercher une cible et avancer dans sa direction</h2>
+   Le robot doit rechercher une cible et avancer jusqu`à cette cible.
+   <br>
+   Si la distance qui sépare le robot de la cible est inférieure à 20 cm, le robot avance jusqu'à la cible.
+   <br>
+   Sinon le robot tourne sur lui-même jusqu'à ce qu'il détecte la cible à moins de 20 cm.
+   <br>
+   <img src="defi4.png" alt="défi 4">
+   
+  <h2>Défi 5: slalom</h2>
+    Le robot doit slalomer entre des obstacle.
+    <br>
+    Le robot avance, s'il détecte un obstacle à moins de 10 cm, il tourne à droite pendant 0,2 secondes, et recommence à avancer.
+    <br> 
+    S'il rencontre un autre obstacle, il tourne vers la gauche pendant 0,2 secondes et recommence à avancer.
+    <br> 
+    Et ainsi de suite pour chaque obstacle, il tourne une fois à droite, une fois à gauche, une fois à droite, une fois à gauche, ...d ...
+    <br>
+    <img src="defi5.png" alt="défi 5">
+
+  <h2>Défi 6: slalom des pompiers</h2>
+    Comme le défi 5 mais le robot possède un gyrophare (des leds qui clignotent en rouge) 
+    et une sirène (notes B et A jouées durant 2 secondes en boucle).
+
 </body>
 
 </html>
