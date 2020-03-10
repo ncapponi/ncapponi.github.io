@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Suiveur de ligne</title>
+	<meta name="Generator" content="Zim 0.68">
+	<style type="text/css">
+		a          { text-decoration: none      }
+		a:hover    { text-decoration: underline }
+		a:active   { text-decoration: underline }
+		strike     { color: grey                }
+		u          { text-decoration: none;
+					 background-color: yellow   }
+		tt         { color: #2e3436;            }
+		pre        { color: #2e3436;
+					 margin-left: 20px          }
+		h1         { text-decoration: underline;
+					 color: #4e9a06; margin-bottom: 0 }
+		h2         { color: #4e9a06; margin-bottom: 0 }
+		h3         { color: #4e9a06; margin-bottom: 0 }
+		h4         { color: #4e9a06; margin-bottom: 0 }
+		h5         { color: #4e9a06; margin-bottom: 0 }
+		p          { margin-top: 0              }
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+	</style>
+</head>
+<body>
+
+<!-- Wiki content -->
+
+	<h1>Défis suiveur de ligne</h1>
+
+<br>
+
+<p>
+Pour suivre une ligne, il faut utiliser les tests suivants:<br>
+<img src="suiveur_ligne.png"><br>
+Pour chaque côté, le suiveur de ligne permet de savoir si le sol est blanc ou noir. Il y a deux capteur, un à gauche et un à droite. <br>
+En utilisant l´état du capteur, on peut détecter où se trouve le robot:<br>
+</p><ul>
+<li>si le côté gauche et le côté droit sont noir, le robot est positionné sur la ligne</li>
+<li>si le côté gauche est noir et le côté droit est blanc, le robot est encore sur la ligne mais trop à droite</li>
+<li>si le côté gauche est blanc et le côté droit est noir, le robot est encore sur la ligne mais trop à gauche</li>
+<li>si le côté gauche et le côté droit sont blanc, le robot est complétement en dehors de la ligne</li>
+</ul>
+<p></p>
+
+<h3>Programme de suivi</h3>
+
+<p>
+Pour suivre une ligne, on peut utiliser la méthode suivante:<br>
+</p><ul>
+<li>Réaliser une boucle infinie
+<ul>
+<li>Si blanc côté droit alors tourner vers la gauche</li>
+<li>Si blanc côté gauche alors tourner vers la droite</li>
+<li>Si blanc côté droit et côté gauche alors s’arrêter</li>
+<li>Si noir côté droit et côté gauche alors avance tout droit</li>
+</ul></li>
+</ul>
+<p></p>
+
+<h3>Comment tourner sur place</h3>
+
+<p>
+Pour faire tourner le robot sur place, sans avancer, on peut utiliser la séquence suivante qui active un moteur dans un sens et l'autre moteur dans l'autre sens:<br>
+<img src="tourner_sur_place.png">
+</p>
+
+<h3>Défi 1: écrire le programme de suivi de ligne</h3>
+
+<p>
+Ecrire le programme de suivi de ligne dans mblock.<br>
+Téléverser le programme dans le robot et tester le robot sur le tapis avec la ligne noire.
+</p>
+
+<h3>Défi 2: suivi de ligne avec obstacle</h3>
+
+<p>
+Modifier le programme du défi 1 pour détecter un obstacle sur le parcours (avec le capteur de distance).<br>
+Si un obstacle est détecté, faire demi-tour et suivre la ligne dans l'autre sens.
+</p>
+
+<br>
+<br>
+<br>
+
+
+
+<!-- End wiki content -->
+
+
+
+
+</body></html>
